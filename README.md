@@ -75,3 +75,10 @@ class Controller extends ControllerBase
     	$user = $this->socialLogin->useProvider('google')->authorize()->user();
     }
 }
+```
+## Adding your own providers
+
+In works.
+
+
+#### Currently the package only supports google and facebook, more are to come soon. 
