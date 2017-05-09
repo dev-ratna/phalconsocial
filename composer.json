@@ -1,6 +1,6 @@
 {
   "name": "dev-ratna/phalcon-social",
-  "description": "a phalcon component to impliment social logins",
+  "description": "a phalcon component to implement social logins",
   "type": "library",
   "license": "MIT",
   "keywords": [
