@@ -23,8 +23,8 @@
     "psr-4": {
       "PhalconSocial\\": "src/"
     },
-    "files": {
+    "files": [
       "app\helpers.php"
-    }
+    ]
   }
 }
