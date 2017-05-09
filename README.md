@@ -11,6 +11,8 @@ composer require dev-ratna/phalcon-social
 
 the wrapper by deafault searches for 'social' in the main config file.
 
+the config should use keys `facebook`, `google` or depending on the alias of the provider.
+
 
 ```php
 'social' => [
@@ -20,8 +22,8 @@ the wrapper by deafault searches for 'social' in the main config file.
         'redirect_uri' => 'url/to/redirect'
     ],
     'google' => [
-        'client_id' => '583926489316-gjaoa5cqqtrono7cke07b1cvg2lih9ci.apps.googleusercontent.com',
-        'client_secret' => 'fhw5zwhKvR0Vn_YNYT9XYjVL',
+        'client_id' => 'example-id',
+        'client_secret' => 'example-secret',
         'redirect_uri' => 'url/to/redirect'
     ]
   ]
@@ -70,6 +72,6 @@ class Controller extends ControllerBase
 
     public function loginAction()
     {
-    	$user = $this->socialLogin->useProvider('google')->authorize()->user;
+    	$user = $this->socialLogin->useProvider('google')->authorize()->user();
     }
 }
