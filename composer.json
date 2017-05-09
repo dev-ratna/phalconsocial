@@ -1,0 +1,30 @@
+{
+  "name": "dev-ratna/phalcon-social",
+  "description": "a phalcon component to impliment social logins",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "phalcon-social",
+    "phalcon",
+    "social-login",
+    "socialite"
+  ],
+  "authors": [
+    {
+      "name": "Dev Ratna Upadhyaya",
+      "email": "devratna12@gmail.com"
+    }
+  ],
+  "require": {
+  "php": ">=5.4.0",
+        "guzzlehttp/guzzle": "~6.0",
+  },
+  "autoload": {
+    "psr-4": {
+      "PhalconSocial\\": "src/"
+    },
+    "files": {
+      "app\helpers.php"
+    }
+  }
+}
