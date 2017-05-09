@@ -40,7 +40,20 @@ $di->setShared('socialLogin', function(){
 
 });
 ```
-Usage within Controller
+The routes
+```php
+$router->add('/social/oauth/redirect', [
+	'controller' => 'controller',
+	'action' => 'redirect'
+]);
+
+$router->add('/social/oauth/login', [
+	'controller' => 'controller',
+	'action' => 'login'
+]);
+
+```
+In the Controller
 ```php
 <?php
 
@@ -57,7 +70,6 @@ class Controller extends ControllerBase
 
     public function loginAction()
     {
-    	$user = $this->socialLogin->useProvider('google')->authorize();
-    	var_dump($user);
+    	$user = $this->socialLogin->useProvider('google')->authorize()->user;
     }
 }
