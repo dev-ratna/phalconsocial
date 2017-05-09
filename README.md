@@ -9,7 +9,7 @@ composer require dev-ratna/phalcon-social
 
 ## Configration
 
-the wrapper by deafault searches for 'social' in the main config file.
+the wrapper by deafault searches for `social` key in the main config file.
 
 the config should use keys `facebook`, `google` or depending on the alias of the provider.
 
